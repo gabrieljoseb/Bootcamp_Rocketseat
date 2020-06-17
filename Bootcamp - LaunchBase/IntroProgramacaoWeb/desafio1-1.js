@@ -12,10 +12,8 @@ const imc = peso / (altura * altura);
 // SE o IMC maior ou igual a 30: Carlos você está acima do peso;
 // SE o IMC menor que 29.9: Carlos você não está acima do peso;
 
-if (imc >= 30)
-    console.log(`${nome} você está acima do peso`)
-else
-    console.log(`${nome} você não está acima do peso`)
+if (imc >= 30) console.log(`${nome} você está acima do peso`);
+else console.log(`${nome} você não está acima do peso`);
 
 /*====================================================================================================================================================== */
 
@@ -36,12 +34,13 @@ const contribuicao = 23;
 // SE a pessoa estiver aposentada: Silvana, você pode se aposentar!;
 // SE a pessoa NÃO estiver aposentada: Silvana, você ainda não pode se aposentar!;
 
-const calculoContribuicao = idade + contribuicao
+const calculoContribuicao = idade + contribuicao;
 
-const homemPodeAposentar = sexo == 'M' && contribuicao >= 35 && calculoContribuicao >= 95
-const mulherPodeAposentar = sexo == 'F' && contribuicao >= 30 && calculoContribuicao >= 85
+const homemPodeAposentar =
+  sexo == "M" && contribuicao >= 35 && calculoContribuicao >= 95;
+const mulherPodeAposentar =
+  sexo == "F" && contribuicao >= 30 && calculoContribuicao >= 85;
 
 if (homemPodeAposentar || mulherPodeAposentar)
-    console.log(`${nome}, você pode se aposentar!`)
-else
-    console.log(`${nome}, você ainda não pode se aposentar!`)
+  console.log(`${nome}, você pode se aposentar!`);
+else console.log(`${nome}, você ainda não pode se aposentar!`);
