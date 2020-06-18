@@ -1,5 +1,9 @@
 @import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap";
 
+:root {
+    --color-green: #50FA7B;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +35,7 @@ header div a {
 }
 
 header div a:hover {
-    color: #50FA7B;
+    color: var(--color-green);
     transition: color 200ms;
 }
 
@@ -43,7 +47,7 @@ header div a:hover {
 
 #wrapper img {
     border-radius: 50%;
-    border: 5px solid #50FA7B;
+    border: 5px solid var(--color-green);
     margin-bottom: 32px;
 }
 
@@ -67,4 +71,8 @@ header div a:hover {
     font-size: 24px;
     /*Dica: colocar o line height com 10px maior que o font-size*/
     line-height: 34px;
+}
+
+#wrapper p a {
+    color: var(--color-green);
 }
