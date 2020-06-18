@@ -22,19 +22,21 @@ header {
     background: rgba(0, 0, 0, 0.1);
 }
 
-header div {
+.links {
     text-align: center;
 }
 
-header div a {
+/*Para acessar classes*/
+.links a {
     color: white;
     font-size: 18px;
     line-height: 28px;
     margin: 0 16px;
+    padding-bottom: 3px;
     text-decoration: none;
 }
 
-header div a:hover {
+.links a:hover {
     color: var(--color-green);
     transition: color 200ms;
 }
@@ -42,13 +44,14 @@ header div a:hover {
 /*Para acessar id's*/
 #wrapper {
     text-align: center;
-    padding: 32px;
+    padding: 32px 32px 0;
 }
 
 #wrapper img {
     border-radius: 50%;
     border: 5px solid var(--color-green);
     margin-bottom: 32px;
+    height: 300px;
 }
 
 #wrapper h1 {
@@ -75,4 +78,12 @@ header div a:hover {
 
 #wrapper p a {
     color: var(--color-green);
+}
+
+#links-footer {
+    margin-bottom: 18px;
+}
+
+#links-footer a {
+    border-bottom: 1px solid var(--color-green);
 }
