@@ -132,3 +132,19 @@ header {
     position: fixed;
     top: 0;
 }
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
