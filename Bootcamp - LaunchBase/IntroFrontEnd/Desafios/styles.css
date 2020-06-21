@@ -16,7 +16,7 @@ header {
     text-align: center;
     padding: 32px;
     background-color: rgba(84, 78, 78, 0.605);
-    border-bottom: 1px solid #98394a;
+    border-bottom: 1px solid #5f44b689;
 }
 
 h1 {
@@ -31,11 +31,6 @@ a {
     text-decoration: none;
 }
 
-#return-home {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
 header a {
     margin-right: 32px;
 }
@@ -45,57 +40,23 @@ header a:hover {
     transition: color 300ms;
 }
 
-table tr td img {
-    margin: 50px 10px 20px 30px;
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
-    /* width: 850px;
-    height: 350px; */
-    opacity: 0.8;
-}
-
-table tr td p {
-    max-width: auto;
-    height: auto;
-    margin-top: 30px;
-    margin-right: 80px;
-    font-size: 34px;
-    align-items: center;
-    justify-content: center;
-}
-
-ul {
-    margin-left: 32px;
-    margin-bottom: 50px;
-}
-
-ul h2 {
-    color: blueviolet;
-    margin-top: 60;
-    margin-bottom: 40px;
-    text-decoration: underline;
-}
-
-ul li {
-   margin-left: 40px; 
-   font-size: 24px;
-}
-
 .links {
+    margin: auto;
     text-align: center;
-    margin-bottom: 18px;
 }
 
 .links a {
     color: rgba(171, 171, 171, 0.523);
     margin: 0 16px;
     font-size: 24px;
-    border-bottom: 1px solid #98394a;
+}
+
+#footer {
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .links a:hover {
-    border: 0;
     color: aqua;
     text-decoration: none;
 }

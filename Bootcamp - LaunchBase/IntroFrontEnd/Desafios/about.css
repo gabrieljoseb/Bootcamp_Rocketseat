@@ -1,0 +1,34 @@
+table tr td img {
+    margin: 50px 10px 20px 30px;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    opacity: 0.8;
+    border: 5px solid #18b569;
+}
+
+table tr td p {
+    max-width: auto;
+    height: auto;
+    margin-top: 30px;
+    margin-right: 80px;
+    font-size: 34px;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    margin-left: 32px;
+}
+
+ul h2 {
+    color: blueviolet;
+    margin-top: 60;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+ul li {
+   margin-left: 40px; 
+   font-size: 24px;
+}
