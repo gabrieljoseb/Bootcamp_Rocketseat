@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+    <head>
 
+        {% block head %}
+            <title>Gabriel Ribeiro</title>
+        {% endblock %}
 
-    {% block head %}
-        <title>Gabriel Ribeiro</title>
-    {% endblock %}
+        <link rel="stylesheet" href="/styles.css">
+    </head>
 
-    <link rel="stylesheet" href="/styles.css">
-</head>
+    <body>
+        <header>
+            <div class="links">
+                <a href="/">Sobre</a>
+                <a href="/portfolio">Aulas</a>
+            </div>
 
-<body>
-    <header>
-        <div class="links">
-            <a href="/">Sobre</a>
-            <a href="/portfolio">Aulas</a>
-        </div>
+        </header>
 
-    </header>
+        {% block content %}{% endblock %}
 
-    {% block content %}{% endblock %}
-
-</body>
+    </body>
 
 </html>

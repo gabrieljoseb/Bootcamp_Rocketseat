@@ -1,27 +1,15 @@
-<html lang="pt-br">
+{% extends 'layout.njk' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio</title>
+{% block head %}
+    <title>Desafio - Cursos</title>
 
-    <link rel="shortcut icon" href="/public/assets/favicon.png" type="image/x-png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
+{% endblock head %}
 
-<body>
-    <header>
-        <div class="links">
-            <a href="https://discordapp.com/invite/gCRAFhc" target="_blank">Comunidade</a>
-            <a href="mailto:oi@rocketseat.com.br" target="_blank">Email</a>
-            <a href="tel:+5547992078767">Telefone</a>
-            <a href="about.html">Sobre</a>
-            <a href="contents.html">Conteúdos</a>
-        </div>
-    </header>
+{% block content %}
 
     <h1>Rocketseat</h1>
+
     <section class="cards">
         <div class="card" id="starter">
             <div class="card__image-container">
@@ -87,5 +75,4 @@
     </div>
 
     <script src="scripts.js"></script>
-</body>
-</html>
+{% endblock content %}
