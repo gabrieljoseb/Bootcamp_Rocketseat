@@ -185,9 +185,8 @@ iframe {
 
 /*=== VIDEO PAGE ===*/
 .video {
-    margin: 0 auto;
+    margin: 40px auto;
     max-width: 800px;
-
 }
 
 .card__video-container {
