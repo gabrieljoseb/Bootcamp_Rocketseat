@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout.njk" %}
 
 {% block head %}
     <title>Portfolio - Gabriel Ribeiro</title>
@@ -13,83 +13,22 @@
     </div>
 
     <section class="cards">
-        <div class="card" id="GykTLqODQuU">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/GykTLqODQuU/maxresdefault.jpg" alt="Video aula">
-            </div>
-            <div class="card__content">
-                <p>Formulário animado com JS puro e CSS animation | Mayk Brito</p>
-            </div>
-            <div class="card__info">
-                <p>57 min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
 
-        <div class="card" id="AqJKAJ0TKms">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/AqJKAJ0TKms/maxresdefault.jpg" alt="Video aula">
+        {% for item in items %}
+            <div class="card" id="{{item.id}}">
+                <div class="card__image-container">
+                    <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="Imagem de {{item.title}}">
+                </div>
+                <div class="card__content">
+                    <p>{{item.title}}</p>
+                </div>
+                <div class="card__info">
+                    <p>{{item.duration}}</p>
+                    <p class="card__price">{{item.price}}</p>
+                </div>
             </div>
-            <div class="card__content">
-                <p>Criando um PWA com React Native & Expo Web | Diego Fernandes</p>
-            </div>
-            <div class="card__info">
-                <p>42 min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
+        {% endfor %}
 
-        <div class="card" id="UftSB4DaRU4">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/UftSB4DaRU4/maxresdefault.jpg" alt="Video aula">
-            </div>
-            <div class="card__content">
-                <p>Manipulação de DOM com Javascript, do zero, na prática | Mayk Brito</p>
-            </div>
-            <div class="card__info">
-                <p>97 min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="Vw9BG9fauIE">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/Vw9BG9fauIE/maxresdefault.jpg" alt="Video aula">
-            </div>
-            <div class="card__content">
-                <p>É a hora de estudar o DENO? | Diego Fernandes</p>
-            </div>
-            <div class="card__info">
-                <p>15 min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="2iS3SHwft0k">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/2iS3SHwft0k/maxresdefault.jpg" alt="Video aula">
-            </div>
-            <div class="card__content">
-                <p>Prisma 2: Automatize o acesso ao banco de dados | Diego Fernandes</p>
-            </div>
-            <div class="card__info">
-                <p>31 min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="-VQPimwkstM">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/-VQPimwkstM/maxresdefault.jpg" alt="Video aula">
-            </div>
-            <div class="card__content">
-                <p>Menu de subcategorias com recursividade no Javascript | Mayk Brito</p>
-            </div>
-            <div class="card__info">
-                <p>36 min</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
     </section>
 
     <div class="modal-overlay">
