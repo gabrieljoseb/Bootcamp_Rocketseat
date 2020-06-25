@@ -28,18 +28,17 @@
 
     <ul>
         <h2>Tecnologias Utilizadas pela Empresa:</h2>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Javascript</li>
-        <li>Node.Js</li>
-        <li>React</li>
-        <li>React Native</li>
+        
+        {% for tecnology in tecnologies %}
+            <li>{{tecnology.name}}</li>
+        {% endfor %}
+        
     </ul>
 
     <div class="links" id="footer">
-        <a href="https://github.com/Rocketseat" target="_blank">GitHub</a>
-        <a href="https://www.instagram.com/rocketseat_oficial/" target="_blank">Instagram</a>
-        <a href="https://www.facebook.com/rocketseat/" target="_blank">Facebook</a>
-        <a href="https://www.linkedin.com/school/rocketseat/" target="_blank">LinkedIn</a>
+        {% for link in footer_links %}
+            <a href="{{link.url}}" target="_blank">{{link.name}}</a>
+        {% endfor %}
+
     </div>
 {% endblock content %}

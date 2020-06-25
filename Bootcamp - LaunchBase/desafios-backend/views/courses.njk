@@ -11,42 +11,21 @@
     <h1>Rocketseat</h1>
 
     <section class="cards">
-        <div class="card" id="starter">
-            <div class="card__image-container">
-                <img src="https://skylab.rocketseat.com.br/static/media/Starter.64c237cc.svg" alt="Curso Starter">
+        {% for course in courses %}
+            <div class="card" id="{{course.id}}">
+                <div class="card__image-container">
+                    <img src="https://skylab.rocketseat.com.br/static/media/{{course.image_id}}.svg" alt="Curso {{course.id}}">
+                </div>
+                <div class="card__content">
+                    <p>{{course.description}}</p>
+                </div>
+                <div class="card__info">
+                    <p>{{course.modules}}</p>
+                    <p class="card__price">{{course.price}}</p>
+                </div>
             </div>
-            <div class="card__content">
-                <p>Torne-se um programador desejado com esses cursos gratuitos</p>
-            </div>
-            <div class="card__info">
-                <p>10 módulos</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-        <div class="card" id="launchbase">
-            <div class="card__image-container">
-                <img src="https://skylab.rocketseat.com.br/static/media/LaunchBase.08285320.svg" alt="Curso Launchbase">
-            </div>
-            <div class="card__content">
-                <p>Domine programação do zero e tenha acesso às melhores oportunidades do mercado</p>
-            </div>
-            <div class="card__info">
-                <p>40 módulos</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-        <div class="card" id="gostack">
-            <div class="card__image-container">
-                <img src="https://skylab.rocketseat.com.br/static/media/GoStack.83a178a0.svg" alt="Curso GoStack">
-            </div>
-            <div class="card__content">
-                <p>Treinamento imersivo nas tecnologias mais modernas de desenvolvimento web e mobile</p>
-            </div>
-            <div class="card__info">
-                <p>45 módulos</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
+        {% endfor %}
+
     </section>
 
     <div class="modal-overlay">
@@ -68,10 +47,9 @@
     </div>
 
     <div class="links" id="footer">
-        <a href="https://github.com/Rocketseat" target="_blank">GitHub</a>
-        <a href="https://www.instagram.com/rocketseat_oficial/" target="_blank">Instagram</a>
-        <a href="https://www.facebook.com/rocketseat/" target="_blank">Facebook</a>
-        <a href="https://www.linkedin.com/school/rocketseat/" target="_blank">LinkedIn</a>
+        {% for link in footer_links %}
+            <a href="{{link.url}}" target="_blank">{{link.name}}</a>
+        {% endfor %}
     </div>
 
     <script src="scripts.js"></script>
