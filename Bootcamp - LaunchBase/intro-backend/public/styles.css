@@ -92,7 +92,7 @@ header {
 /*=== CARDS ===*/
 .cards {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 50px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
