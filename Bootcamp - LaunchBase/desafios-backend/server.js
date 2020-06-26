@@ -18,10 +18,10 @@ nunjucks.configure("views", {
 })
 
 server.get("/", function (req, res) {
-    res.render("about", {  courses, footer_links, tecnologies })
+    res.render("about", { courses, footer_links, tecnologies })
 
     server.use(function (req, res) {
-        res.status(404).render("not-found");
+        res.status(404).render("not-found")
     });
 })
 
@@ -29,8 +29,20 @@ server.get("/courses", function (req, res) {
     res.render("courses", { courses, footer_links, tecnologies })
 
     server.use(function (req, res) {
-        res.status(404).render("not-found");
+        res.status(404).render("not-found")
     });
+})
+
+server.get("/courses/:id", (req, res) => {
+    const id = req.params.id;
+
+    const course = courses.find((course) => {
+        return course.id == id
+    })
+
+    if (!course) res.render("not-found")
+    
+    return res.render("course", { course })
 })
 
 server.listen(5000, function () {

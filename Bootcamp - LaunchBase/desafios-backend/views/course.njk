@@ -1,0 +1,32 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <title>Desafio - Cursos</title>
+{% endblock head %}
+
+{% block content %}
+
+    <section class="course">
+
+        <div class="card" id="{{course.id}}">
+            <div class="card__course-container">
+                <iframe src="https://rocketseat.com.br/{{course.id}}" frameborder="0"></iframe>
+            </div>
+            <div class="card__content">
+                <p>{{course.description}}</p>
+            </div>
+            <div class="card__info">
+                <p>{{course.modules}}</p>
+                <p class="card__price">{{course.price}}</p>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="links" id="footer">
+        {% for link in footer_links %}
+            <a href="{{link.url}}" target="_blank">{{link.name}}</a>
+        {% endfor %}
+    </div>
+
+{% endblock content %}

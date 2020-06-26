@@ -20,14 +20,14 @@ module.exports = {
             image_id: "LaunchBase.08285320",
             description: "Domine programação do zero e tenha acesso às melhores oportunidades do mercado",
             modules: "40 módulos",
-            price: "Free"
+            price: "Paid"
         },
         {
             id: "gostack",
             image_id: "GoStack.83a178a0",
             description: "Treinamento imersivo nas tecnologias mais modernas de desenvolvimento web e mobile",
             modules: "45 módulos",
-            price: "Free"
+            price: "Paid"
         }
     ],
     footer_links: [
