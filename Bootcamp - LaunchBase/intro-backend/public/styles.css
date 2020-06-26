@@ -45,7 +45,7 @@ header {
 /*Para acessar id's*/
 #wrapper {
     text-align: center;
-    padding: 32px 32px 0;
+    padding: 32px;
 }
 
 #wrapper img {
@@ -92,7 +92,7 @@ header {
 /*=== CARDS ===*/
 .cards {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 0 auto 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -185,7 +185,7 @@ iframe {
 
 /*=== VIDEO PAGE ===*/
 .video {
-    margin: 40px auto;
+    margin: 0 auto 40px;
     max-width: 800px;
 }
 
